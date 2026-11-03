@@ -6,7 +6,7 @@ import { useChat } from "@/store/ChatContext";
 import { trackEvent } from "@/lib/analytics";
 
 const TypewriterRole: React.FC<{ onComplete?: () => void }> = ({ onComplete }) => {
-  const fullText = "AI_Systems_Architect";
+  const fullText = "AI_FullStack_Developer";
   const [displayed, setDisplayed] = useState("");
 
   useEffect(() => {
@@ -33,13 +33,13 @@ const TypewriterRole: React.FC<{ onComplete?: () => void }> = ({ onComplete }) =
         {displayed.length > 2 ? "_" : ""}
       </span>
       <span className="text-amber-700 dark:text-amber-400 font-bold">
-        {displayed.slice(3, 10)}
+        {displayed.slice(3, 12)}
       </span>
       <span className="text-muted-foreground/60">
-        {displayed.length > 10 ? "_" : ""}
+        {displayed.length > 12 ? "_" : ""}
       </span>
       <span className="text-foreground font-bold">
-        {displayed.slice(11)}
+        {displayed.slice(13)}
       </span>
       <span className="animate-pulse text-primary ml-0.5 font-bold">▋</span>
     </span>
@@ -64,7 +64,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className="inline-block sticky-note px-4 py-1.5 text-sm font-mono mb-2 cursor-pointer select-none">
-              📌 Rinzan's Portfolio
+              📌 Sahal's Portfolio
             </div>
           </motion.div>
 
@@ -90,22 +90,22 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          {/* Description Paragraph: Flows in smoothly after title */}
+          {/* Description Paragraph: Flows in smoothly */}
           <motion.div
             initial={{ opacity: 0, y: 14 }}
-            animate={isTitleDrawn ? { opacity: 1, y: 0 } : { opacity: 0, y: 14 }}
-            transition={{ duration: 0.65, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="text-lg md:text-2xl font-sketch text-muted-foreground max-w-lg leading-relaxed">
-              Expert in building RAG, LLM Agents, and scalable AI microservices with 2+ years of experience.
+              AI Full-Stack Developer building scalable MERN applications, Django backends, and intelligent real-time integrations.
             </p>
           </motion.div>
 
           {/* Action Button: Flows in smoothly */}
           <motion.div
             initial={{ opacity: 0, y: 14, scale: 0.95 }}
-            animate={isTitleDrawn ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 14, scale: 0.95 }}
-            transition={{ duration: 0.6, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           >
             <button
               className="sketch-border bg-primary text-primary-foreground px-6 md:px-8 py-3 text-lg md:text-xl font-hand font-semibold hover:scale-105 transition-transform active:scale-95 shadow-md"
@@ -121,15 +121,14 @@ const HeroSection = () => {
           {/* Social / Portfolio Links: Flows in smoothly */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
-            animate={isTitleDrawn ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
-            transition={{ duration: 0.6, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="flex flex-wrap gap-2 md:gap-4 pt-2">
               {[
-                { label: "Resume", href: "/Rinzan_Resume.pdf", event: "resume_download" },
-                { label: "LinkedIn", href: "https://www.linkedin.com/in/rinzan-np-477154284/", event: "linkedin_click" },
-                { label: "GitHub", href: "https://github.com/Rinzan-NP", event: "github_click" },
-                { label: "Instagram", href: "https://www.instagram.com/_rinzan_np_/", event: "instagram_click" }
+                { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammed-sahal-8a3287319", event: "linkedin_click" },
+                { label: "GitHub", href: "https://github.com/sahalnp", event: "github_click" },
+                { label: "LeetCode", href: "https://leetcode.com/u/sahalnp/", event: "leetcode_click" },
               ].map((link) => (
                 <a
                   key={link.label}
@@ -150,8 +149,8 @@ const HeroSection = () => {
         <div className="flex-1 flex justify-center w-full">
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.96 }}
-            animate={isTitleDrawn ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 20, scale: 0.96 }}
-            transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="w-full flex justify-center"
           >
             <HeroAgentBlueprint />

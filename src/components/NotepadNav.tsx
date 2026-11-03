@@ -69,7 +69,7 @@ const NotepadNav = () => {
                     </div>
 
                     <div className="font-hand font-bold text-xl md:mr-4 md:border-r border-ink/10 md:pr-6 whitespace-nowrap">
-                        Rinzan.txt
+                        Sahal.txt
                     </div>
 
                     {/* Desktop Menu */}

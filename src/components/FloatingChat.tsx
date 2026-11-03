@@ -98,7 +98,7 @@ const renderMessageText = (rawText: string) => {
 const FloatingChat = () => {
   const { isOpen, toggleChat, isAiReady } = useChat();
   const [messages, setMessages] = useState<Message[]>([
-    { role: "ai", text: "Hey, I'm Rinzan's AI version. Ask me anything about him!" }
+    { role: "ai", text: "Hey! I'm Sahal's AI assistant. Ask me anything about his projects, experience, or tech stack!" }
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -168,7 +168,7 @@ const FloatingChat = () => {
               for (const matchStr of sectionMatches) {
                 const sec = matchStr.replace("[SECTION:", "").replace("]", "");
                 window.dispatchEvent(
-                  new CustomEvent("rinzan:highlight-section", { detail: { section: sec } })
+                  new CustomEvent("sahal:highlight-section", { detail: { section: sec } })
                 );
               }
               data = data.replace(/\[SECTION:\w+\]/g, "");
@@ -279,7 +279,7 @@ const FloatingChat = () => {
               {/* Header */}
               <div className="flex items-center gap-2 pb-3 border-b border-ink/10 mb-3">
                 <span className="text-xl">👨‍💻</span>
-                <span className="font-hand text-lg font-semibold">Talk to Rinzan (AI)</span>
+                <span className="font-hand text-lg font-semibold">Talk to Sahal (AI)</span>
                 <button
                   onClick={() => setTtsEnabled(v => !v)}
                   className="ml-auto text-lg hover:scale-110 transition-transform"
@@ -323,7 +323,7 @@ const FloatingChat = () => {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                  placeholder="Ask about Rinzan..."
+                  placeholder="Ask about Sahal..."
                   className="flex-1 sketch-border-light bg-card/50 px-3 py-2 font-sketch text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
                 />
                 <button

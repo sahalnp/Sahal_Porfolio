@@ -37,8 +37,8 @@ const Index = () => {
       el.classList.add("ring-4", "ring-primary", "ring-offset-4");
       setTimeout(() => el.classList.remove("ring-4", "ring-primary", "ring-offset-4"), 1200);
     };
-    window.addEventListener("rinzan:highlight-section", handler);
-    return () => window.removeEventListener("rinzan:highlight-section", handler);
+    window.addEventListener("sahal:highlight-section", handler);
+    return () => window.removeEventListener("sahal:highlight-section", handler);
   }, []);
 
   return (
@@ -55,7 +55,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 text-center border-t border-border">
         <p className="font-hand text-lg text-muted-foreground">
-          ✏️ Crafted by Rinzan — 2025
+          ✏️ Crafted by Muhammed Sahal — 2026
         </p>
       </footer>
 

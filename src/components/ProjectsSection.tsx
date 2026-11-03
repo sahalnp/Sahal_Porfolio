@@ -2,32 +2,36 @@ import SketchReveal from "./SketchReveal";
 
 const projects = [
   {
-    icon: "🧠",
-    title: "Agentic AI Research & Automation System",
-    desc: "Multi-step LLM agent with dynamic tool-calling, persistent memory (MongoDB), and structured task execution using LangChain. Full orchestration exposed via FastAPI REST endpoints. Containerized and deployed on AWS EC2.",
-    tags: ["LangChain", "FastAPI", "MongoDB", "AWS EC2", "Docker"],
+    icon: "📊",
+    title: "Performance Monitoring & Analytics System",
+    desc: "Backend system for staff performance and project KPI analytics with real-time visualization dashboards. Built role-based access with optimized database queries for faster report generation.",
+    tags: ["Node.js", "Express.js", "React.js", "PostgreSQL", "Socket.IO", "JWT"],
     color: "sticky-note-blue",
+    link: "https://kpi-tracking-front.onrender.com",
   },
   {
-    icon: "📚",
-    title: "LLM-Based RAG Knowledge Platform",
-    desc: "End-to-end document pipeline: ingestion, chunking, embedding, and vector store indexing using OpenAI and LangChain. FastAPI + PostgreSQL backend with Next.js SSR frontend. Full containerized stack deployed on AWS.",
-    tags: ["OpenAI", "LangChain", "Next.js", "PostgreSQL", "AWS S3"],
+    icon: "📦",
+    title: "GINGR Distribution System",
+    desc: "Issue reporting and campus maintenance task management system with role-based access for students and admins. Features real-time status tracking and centralized AI communication.",
+    tags: ["Django", "React", "React Native", "PostgreSQL", "Socket.IO", "AI Integration"],
     color: "sticky-note-green",
+    link: "https://distribution.gingr.in",
   },
   {
-    icon: "🎓",
-    title: "EdTech AI Tutor Platform",
-    desc: "AI-powered personalized learning platform with multi-modal content generation, adaptive assessments, and real-time doubt resolution using LLM agents.",
-    tags: ["LLM Agents", "React", "FastAPI", "Vector DB"],
+    icon: "💬",
+    title: "CRM with AI WhatsApp & Instagram Auto-Reply",
+    desc: "Full-featured CRM platform managing customer interactions across WhatsApp and Instagram. Features AI-powered auto-replies, Socket.IO real-time message sync, and role-based conversation assignments.",
+    tags: ["Django", "React.js", "PostgreSQL", "WhatsApp API", "Instagram API", "Socket.IO"],
     color: "sticky-note-pink",
+    link: "https://github.com/sahalnp",
   },
   {
-    icon: "🏥",
-    title: "Medical Report Analyzer",
-    desc: "NLP-powered system that ingests medical reports, extracts key findings, and generates structured summaries using fine-tuned models and RAG.",
-    tags: ["NLP", "RAG", "FastAPI", "PostgreSQL"],
+    icon: "🛍️",
+    title: "E-Commerce Mart (MERN Stack)",
+    desc: "Full-stack e-commerce marketplace featuring user authentication, product management, cart persistence, and MongoDB database modeling.",
+    tags: ["MongoDB", "Express", "React", "Node.js", "REST APIs"],
     color: "sticky-note-blue",
+    link: "https://github.com/sahalnp/ecommerce_mart",
   },
 ];
 
@@ -47,13 +51,26 @@ const ProjectsSection = () => {
                 <div className="text-4xl mb-4">{project.icon}</div>
                 <h3 className="font-hand text-xl font-bold mb-3 leading-tight">{project.title}</h3>
                 <p className="font-sketch text-sm text-foreground mb-5 leading-relaxed">{project.desc}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map(tag => (
                     <span key={tag} className="font-mono text-xs px-2.5 py-1 bg-background/70 border border-ink/15 rounded-sm hover:bg-primary/15 hover:border-primary/40 hover:scale-105 transition-all cursor-default select-none">
                       {tag}
                     </span>
                   ))}
                 </div>
+                {project.link && (
+                  <div className="pt-2 border-t border-ink/10 flex items-center justify-between">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-hand font-bold text-sm text-primary hover:underline inline-flex items-center gap-1.5"
+                    >
+                      <span>{project.link.includes("onrender.com") || project.link.includes("gingr.in") ? "🌐 Live Demo" : "🐙 View on GitHub"}</span>
+                      <span>›</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </SketchReveal>
           ))}

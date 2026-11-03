@@ -13,26 +13,26 @@ const AboutSection = () => {
           {/* Main Sticky Note */}
           <SketchReveal variant="sticky" className="md:col-span-7">
             <div className="sticky-note p-6 md:p-8 space-y-6">
-              <h3 className="font-hand text-3xl font-bold text-foreground">Hi, I'm Rinzan 👋</h3>
+              <h3 className="font-hand text-3xl font-bold text-foreground">Hi, I'm Muhammed Sahal 👋</h3>
               <p className="font-sketch text-pencil text-lg leading-relaxed">
-                I'm an AI Systems Architect & Backend Engineer with over 2 years of experience building production-grade LLM applications.
+                I'm an AI Full-Stack Developer with hands-on production experience building scalable MERN stack applications, Django backends, and AI-powered integrations.
               </p>
               <p className="font-sketch text-pencil text-base leading-relaxed">
-                I specialize in designing scalable RAG pipelines, agentic multi-tool workflows, and high-throughput microservices using FastAPI, LangChain, and AWS.
+                Proven track record of delivering real-time systems, KPI dashboards, and CRM platforms that drive measurable business impact. Passionate about clean architecture and performance optimization.
               </p>
               
               <div className="space-y-3.5 pt-4 border-t border-ink/10">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">⚡</span>
-                  <span className="font-sketch text-pencil text-base font-medium">FastAPI & Python Microservices Specialist</span>
+                  <span className="font-sketch text-pencil text-base font-medium">Full-Stack MERN & Django REST Microservices</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">🧠</span>
-                  <span className="font-sketch text-pencil text-base font-medium">Agentic Reasoning & Tool-Calling Architectures</span>
+                  <span className="text-2xl">🔄</span>
+                  <span className="font-sketch text-pencil text-base font-medium">Real-Time Dashboards (Socket.IO & WebSockets)</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">☁️</span>
-                  <span className="font-sketch text-pencil text-base font-medium">Containerized Deployment (Docker & AWS EC2)</span>
+                  <span className="text-2xl">🤖</span>
+                  <span className="font-sketch text-pencil text-base font-medium">AI Integrations (WhatsApp, Instagram & LLM APIs)</span>
                 </div>
               </div>
             </div>
@@ -45,17 +45,17 @@ const AboutSection = () => {
                 <div className="text-3xl mb-1">🎯</div>
                 <h4 className="font-hand text-xl font-bold text-foreground mb-1">Core Philosophy</h4>
                 <p className="font-sketch text-sm text-pencil leading-relaxed">
-                  "AI should not just chat — it should actively reason, connect tools, and execute workflows reliably."
+                  "Build reliable, real-time products with clean architecture that solve real business problems at scale."
                 </p>
               </div>
             </SketchReveal>
 
             <SketchReveal variant="pop" delay={0.35}>
               <div className="sticky-note sticky-note-green p-5 -rotate-1">
-                <div className="text-3xl mb-1">🚀</div>
-                <h4 className="font-hand text-xl font-bold text-foreground mb-1">Experience & Impact</h4>
+                <div className="text-3xl mb-1">🏆</div>
+                <h4 className="font-hand text-xl font-bold text-foreground mb-1">LeetCode & Problem Solving</h4>
                 <p className="font-sketch text-sm text-pencil leading-relaxed">
-                  2+ years architecting scalable backends, shipping production vector stores, and building autonomous agent swarms.
+                  Solved 90+ algorithmic problems, 32-day coding streak, and earned the "50 Days Badge 2025" for continuous discipline.
                 </p>
               </div>
             </SketchReveal>

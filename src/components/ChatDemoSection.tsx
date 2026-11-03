@@ -57,7 +57,7 @@ const renderMessageText = (text: string) => {
 
 const ChatDemoSection = () => {
   const [messages, setMessages] = useState<Message[]>([
-    { role: "ai", text: "Hey! I'm Rinzan's virtual double. You can ask me about my journey, the tech I use, or some of the cool projects I've built!" }
+    { role: "ai", text: "Hey! I'm Sahal's virtual double. You can ask me about my background, the tech I use, or the projects I've built!" }
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -121,7 +121,7 @@ const ChatDemoSection = () => {
           <div className="sticky-note sticky-note-blue p-4 md:p-8 max-w-2xl mx-auto space-y-4 md:space-y-6">
             <div className="flex items-center gap-2 pb-2 md:pb-3 border-b border-ink/10">
               <span className="text-xl md:text-2xl">👨‍💻</span>
-              <span className="font-hand text-lg md:text-xl font-semibold">Talk to Rinzan (AI)</span>
+              <span className="font-hand text-lg md:text-xl font-semibold">Talk to Sahal (AI)</span>
               <button
                 onClick={() => setTtsEnabled(v => !v)}
                 className="ml-auto text-lg hover:scale-110 transition-transform"
@@ -158,7 +158,7 @@ const ChatDemoSection = () => {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                placeholder="Ask about Rinzan..."
+                placeholder="Ask about Sahal..."
                 className="flex-1 sketch-border-light bg-card/50 px-3 md:px-4 py-2 font-sketch text-sm md:text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
               />
               <button

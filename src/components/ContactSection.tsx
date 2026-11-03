@@ -7,7 +7,7 @@ import { trackEvent } from "@/lib/analytics";
 export const ContactSection = () => {
   const { openChat } = useChat();
 
-  const emailAddress = "nprinzan@gmail.com";
+  const emailAddress = "npmuhammedsahal@gmail.com";
   const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${encodeURIComponent("Project Inquiry / Collaboration")}`;
   const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent("Project Inquiry / Collaboration")}`;
 
@@ -33,7 +33,7 @@ export const ContactSection = () => {
                   <h3 className="font-hand text-2xl font-bold text-foreground">Direct Mailbox</h3>
                 </div>
                 <p className="font-sketch text-sm text-pencil mb-5 leading-relaxed">
-                  Send a message directly to my inbox for project inquiries or freelance roles.
+                  Send a message directly for project inquiries, freelance opportunities, or full-time roles.
                 </p>
 
                 <div className="space-y-2.5 mb-4">
@@ -74,7 +74,7 @@ export const ContactSection = () => {
                   <h3 className="font-hand text-2xl font-bold text-foreground">Talk to my AI</h3>
                 </div>
                 <p className="font-sketch text-sm text-pencil mb-5 leading-relaxed">
-                  Want instant answers about my RAG systems, architecture experience, tech stack, or background?
+                  Want instant answers about my MERN & Django stack, GINGR systems, real-time KPI dashboards, or background?
                 </p>
 
                 <button
@@ -85,12 +85,12 @@ export const ContactSection = () => {
                   className="w-full hand-drawn-border py-3 px-4 bg-background/80 hover:bg-primary/20 text-foreground font-hand text-lg font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-sm mb-4"
                 >
                   <MessageSquare className="w-4 h-4 text-primary" />
-                  <span>💬 Chat with Rinzan (AI)</span>
+                  <span>💬 Chat with Sahal (AI)</span>
                 </button>
               </div>
 
               <div className="font-hand text-xs text-pencil italic pt-3 border-t border-ink/10 text-center">
-                * Real-time RAG Agent with Voice *
+                * Real-time Career Assistant *
               </div>
             </div>
           </SketchReveal>
@@ -101,47 +101,36 @@ export const ContactSection = () => {
               <div>
                 <h3 className="font-hand text-2xl font-bold text-foreground mb-2">Find Me Online</h3>
                 <p className="font-sketch text-sm text-pencil mb-5 leading-relaxed">
-                  Explore open-source repositories, connect on LinkedIn, or follow along on social.
+                  Explore my GitHub repositories, LeetCode profile, and project portfolio.
                 </p>
 
                 <div className="space-y-2.5 mb-4">
                   <a
-                    href="https://www.linkedin.com/in/rinzan-np-477154284/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => trackEvent("linkedin_click", { location: "contact_section" })}
-                    className="p-2.5 bg-background/70 rounded sketch-border-light hover:bg-primary/15 hover:scale-105 transition-all group font-mono text-xs font-semibold flex items-center justify-center gap-2"
-                  >
-                    <span>💼 LinkedIn</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-pencil opacity-60 group-hover:opacity-100" />
-                  </a>
-
-                  <a
-                    href="https://github.com/Rinzan-NP"
+                    href="https://github.com/sahalnp"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackEvent("github_click", { location: "contact_section" })}
                     className="p-2.5 bg-background/70 rounded sketch-border-light hover:bg-primary/15 hover:scale-105 transition-all group font-mono text-xs font-semibold flex items-center justify-center gap-2"
                   >
-                    <span>🐙 GitHub</span>
+                    <span>🐙 GitHub (@sahalnp)</span>
                     <ExternalLink className="w-3.5 h-3.5 text-pencil opacity-60 group-hover:opacity-100" />
                   </a>
 
                   <a
-                    href="https://instagram.com/_rinzan_np_"
+                    href="https://leetcode.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackEvent("instagram_click", { location: "contact_section" })}
+                    onClick={() => trackEvent("leetcode_click", { location: "contact_section" })}
                     className="p-2.5 bg-background/70 rounded sketch-border-light hover:bg-primary/15 hover:scale-105 transition-all group font-mono text-xs font-semibold flex items-center justify-center gap-2"
                   >
-                    <span>📸 Instagram</span>
+                    <span>⚡ LeetCode (90+ Solved)</span>
                     <ExternalLink className="w-3.5 h-3.5 text-pencil opacity-60 group-hover:opacity-100" />
                   </a>
                 </div>
               </div>
 
               <div className="font-sketch text-xs text-pencil pt-3 border-t border-ink/10 text-center">
-                Open for full-time & consulting roles
+                Open to Full-Stack & AI Roles
               </div>
             </div>
           </SketchReveal>

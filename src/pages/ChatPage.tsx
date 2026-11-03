@@ -17,7 +17,7 @@ const ChatPage = () => {
             {/* Footer */}
             <footer className="py-8 px-4 text-center border-t border-border">
                 <p className="font-hand text-lg text-muted-foreground">
-                    ✏️ Crafted by Rinzan — 2025
+                    ✏️ Crafted by Muhammed Sahal — 2026
                 </p>
             </footer>
         </main>

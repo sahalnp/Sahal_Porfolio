@@ -1,12 +1,12 @@
 import SketchReveal from "./SketchReveal";
 
 const techStack = [
-  { name: "FastAPI", description: "High-performance Python microservices for AI inference and backend logic.", emoji: "⚡", color: "sticky-note sticky-note-green" },
-  { name: "LangChain", description: "Orchestration for RAG pipelines, agents, and multi-step reasoning.", emoji: "🔗", color: "sticky-note" },
-  { name: "Django & DRF", description: "Robust backend systems with secure authentication and complex data models.", emoji: "🐍", color: "sticky-note sticky-note-blue" },
-  { name: "Next.js & React", description: "SSR and interactive frontends for building seamless user experiences.", emoji: "⚛️", color: "sticky-note sticky-note-blue" },
-  { name: "PostgreSQL & Vector DBs", description: "Traditional relational data combined with semantic vector storage.", emoji: "📂", color: "sticky-note sticky-note-pink" },
-  { name: "AWS & Docker", description: "Containerized cloud deployment on EC2 with scalable architectures.", emoji: "☁️", color: "sticky-note sticky-note-pink" },
+  { name: "Node.js & Express", description: "Scalable REST APIs, middleware architectures, and high-performance server logic.", emoji: "🟢", color: "sticky-note sticky-note-green" },
+  { name: "Django (Python)", description: "Secure backends with normalized relational schemas, authentication, and ORM optimizations.", emoji: "🐍", color: "sticky-note" },
+  { name: "React.js & React Native", description: "Modern, responsive web applications and mobile cross-platform client interfaces.", emoji: "⚛️", color: "sticky-note sticky-note-blue" },
+  { name: "Socket.IO & Real-Time", description: "Bi-directional real-time communication for live POS dashboards and chat sync.", emoji: "⚡", color: "sticky-note sticky-note-yellow" },
+  { name: "PostgreSQL & MongoDB", description: "Structured relational models and flexible NoSQL storage for analytical workloads.", emoji: "🗄️", color: "sticky-note sticky-note-pink" },
+  { name: "AI & API Integrations", description: "WhatsApp Business API, Instagram Graph API auto-reply, and LLM integrations.", emoji: "🤖", color: "sticky-note sticky-note-blue" },
 ];
 
 const TechStackSection = () => {

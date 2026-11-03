@@ -1,11 +1,12 @@
 import SketchReveal from "./SketchReveal";
 
 const skills = [
-    { name: "AI & LLM (RAG, Agentic, LangChain)", level: "95%" },
-    { name: "Backend (FastAPI, Django, Python)", level: "90%" },
-    { name: "Fullstack (Next.js, React, Node)", level: "85%" },
-    { name: "Databases (PostgreSQL, Vector DBs)", level: "88%" },
-    { name: "DevOps (Docker, AWS, Linux)", level: "80%" },
+    { name: "Full-Stack MERN (Node, Express, React, Mongo)", level: "92%" },
+    { name: "Python & Django Backend (REST APIs, ORM)", level: "90%" },
+    { name: "Real-Time Systems (Socket.IO, WebSockets)", level: "88%" },
+    { name: "Databases (PostgreSQL, MySQL, MongoDB)", level: "89%" },
+    { name: "AI & External APIs (WhatsApp, Instagram, LLMs)", level: "85%" },
+    { name: "Cloud & Deployment (AWS, Vercel, Render, Git)", level: "82%" },
 ];
 
 const SkillsSection = () => {

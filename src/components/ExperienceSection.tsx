@@ -2,43 +2,32 @@ import SketchReveal from "./SketchReveal";
 
 const experience = [
   {
-    year: "Dec 2025 - Present",
-    role: "AI Engineer",
-    company: "Solinify Tech Studio",
+    year: "Jan 2026 - Present",
+    role: "AI Full-Stack Developer",
+    company: "GINGR Technologies",
     badge: "Current Role",
-    detail: "Architecting LLM-powered backend services, RAG pipelines, and agentic workflows using FastAPI and LangChain.",
+    detail: "Building real-time POS dashboards, high-performance RESTful APIs, and AI integrations driving measurable business impact.",
     highlights: [
-      "Designing and deploying production multi-tenant RAG pipelines with ChromaDB and hybrid vector retrieval.",
-      "Building tool-calling AI agents with persistent state memory, streaming responses, and automated task execution.",
-      "Engineering high-throughput asynchronous FastAPI microservices containerized with Docker on AWS EC2."
+      "Developed and maintained real-time POS dashboards for sales tracking and business analytics, improving response time by 25%.",
+      "Built and integrated RESTful APIs for KPI tracking and operational reporting, reducing API latency by 30% through backend optimization.",
+      "Supported POS systems handling 100+ daily transactions with stable performance and reliable real-time updates.",
+      "Optimized backend logic and database queries to enhance system scalability and reduce loading time.",
+      "Refactored existing modules to improve code structure, maintainability, and long-term scalability."
     ],
-    skills: ["LangChain", "FastAPI", "RAG", "ChromaDB", "Llama 3", "AWS EC2", "Docker"]
+    skills: ["Django", "Python", "Node.js", "Express", "React", "PostgreSQL", "Socket.IO", "AI Integration"]
   },
   {
-    year: "Aug 2025 - Nov 2025",
-    role: "Full Stack AI Developer",
-    company: "Prospello Technologies",
-    badge: "AI & Full Stack",
-    detail: "Built AI-enabled full-stack applications with Next.js, FastAPI, and optimized data pipelines.",
+    year: "2022 - 2026",
+    role: "B.Tech in Computer Science & Engineering",
+    company: "Albertian Institute of Science and Technology",
+    badge: "Education",
+    detail: "Graduating computer science engineer with strong foundations in algorithms, distributed systems, and real-time full-stack architectures.",
     highlights: [
-      "Developed interactive generative AI features combining Next.js SSR frontends with Python API backends.",
-      "Implemented document chunking, embeddings pipelines, and semantic search interfaces.",
-      "Streamlined API response times and optimized PostgreSQL vector storage queries."
+      "Solved 90+ algorithmic problems across difficulty levels on LeetCode.",
+      "Maintained a 32-day coding streak and earned the LeetCode 50 Days Badge 2025.",
+      "Built multiple production-grade systems including campus distribution platforms, analytics dashboards, and CRM bots."
     ],
-    skills: ["Next.js", "React", "FastAPI", "OpenAI API", "PostgreSQL", "Tailwind CSS"]
-  },
-  {
-    year: "Jun 2024 - Aug 2025",
-    role: "Django Developer",
-    company: "Gingr Informatics",
-    badge: "Backend & Systems",
-    detail: "Developed scalable backend systems with Django/DRF, focusing on normalized database schemas and JWT security.",
-    highlights: [
-      "Engineered robust RESTful APIs with Django REST Framework (DRF), JWT authentication, and RBAC.",
-      "Designed normalized PostgreSQL schemas and optimized complex ORM query performance.",
-      "Integrated third-party payment gateways, webhook pipelines, and automated background jobs."
-    ],
-    skills: ["Django", "Django REST", "PostgreSQL", "JWT Auth", "REST APIs", "Python"]
+    skills: ["Data Structures", "Algorithms", "System Design", "Database Design", "WebSockets"]
   },
 ];
 
