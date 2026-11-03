@@ -28,8 +28,9 @@ const Index = () => {
       if (!id) return;
       const el = document.getElementById(id);
       if (!el) return;
-      if (window.lenis) {
-        window.lenis.scrollTo(el, { offset: -85, duration: 1.25 });
+      const lenis = (window as unknown as { lenis?: { scrollTo: (target: HTMLElement, options: object) => void } }).lenis;
+      if (lenis && typeof lenis.scrollTo === "function") {
+        lenis.scrollTo(el, { offset: -85, duration: 1.25 });
       } else {
         el.scrollIntoView({ behavior: "smooth", block: "center" });
       }

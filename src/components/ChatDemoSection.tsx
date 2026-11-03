@@ -85,10 +85,10 @@ const ChatDemoSection = () => {
     return () => clearTimeout(timeoutId);
   }, [messages, isLoading]);
 
-  const handleSend = async () => {
-    if (!input.trim() || isLoading) return;
+  const handleSend = async (overrideQuery?: string) => {
+    const userQuery = typeof overrideQuery === "string" ? overrideQuery.trim() : input.trim();
+    if (!userQuery || isLoading) return;
 
-    const userQuery = input.trim();
     setInput("");
     setMessages(prev => [...prev, { role: "user", text: userQuery }]);
     setIsLoading(true);
@@ -152,6 +152,26 @@ const ChatDemoSection = () => {
               )}
             </div>
 
+            {/* Quick Prompt Pills */}
+            <div className="flex gap-2 overflow-x-auto pt-1 pb-1 no-scrollbar text-xs">
+              {[
+                "⚡ GINGR experience",
+                "📊 POS KPI dashboard",
+                "🤖 WhatsApp CRM bot",
+                "🧠 LeetCode milestones",
+              ].map((pill) => (
+                <button
+                  key={pill}
+                  type="button"
+                  onClick={() => handleSend(pill)}
+                  disabled={isLoading}
+                  className="whitespace-nowrap px-3 py-1.5 rounded-full bg-background/80 hover:bg-background border border-ink/15 text-pencil hover:text-foreground font-sketch text-xs transition-colors disabled:opacity-50"
+                >
+                  {pill}
+                </button>
+              ))}
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-2">
               <input
                 type="text"
@@ -162,7 +182,7 @@ const ChatDemoSection = () => {
                 className="flex-1 sketch-border-light bg-card/50 px-3 md:px-4 py-2 font-sketch text-sm md:text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
               />
               <button
-                onClick={handleSend}
+                onClick={() => handleSend()}
                 disabled={isLoading}
                 className="sketch-border bg-primary text-primary-foreground px-4 py-2 font-hand text-lg md:text-xl font-semibold hover:scale-105 transition-transform disabled:opacity-50 disabled:scale-100 whitespace-nowrap"
               >

@@ -52,9 +52,9 @@ export const PencilPointerGuide: React.FC = () => {
       }, 4000);
     };
 
-    window.addEventListener("rinzan:highlight-section", handleHighlight);
+    window.addEventListener("sahal:highlight-section", handleHighlight);
     return () => {
-      window.removeEventListener("rinzan:highlight-section", handleHighlight);
+      window.removeEventListener("sahal:highlight-section", handleHighlight);
       clearTimeout(timer);
     };
   }, []);

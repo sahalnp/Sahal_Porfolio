@@ -121,11 +121,13 @@ const FloatingChat = () => {
     }
   }, [isOpen, messages, streamingText]);
 
-  const handleSend = async (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
-    if (!input.trim() || isLoading) return;
+  const handleSend = async (overrideQuery?: string | React.FormEvent) => {
+    if (overrideQuery && typeof overrideQuery !== "string" && "preventDefault" in overrideQuery) {
+      overrideQuery.preventDefault();
+    }
+    const userQuery = typeof overrideQuery === "string" ? overrideQuery.trim() : input.trim();
+    if (!userQuery || isLoading) return;
 
-    const userQuery = input.trim();
     setInput("");
     setIsLoading(true);
     setStreamingText("");
@@ -316,8 +318,28 @@ const FloatingChat = () => {
                 )}
               </div>
 
+              {/* Quick Prompt Pills */}
+              <div className="flex gap-1.5 overflow-x-auto pt-2 pb-1 no-scrollbar text-xs">
+                {[
+                  "⚡ GINGR experience",
+                  "📊 POS KPI dashboard",
+                  "🤖 WhatsApp CRM bot",
+                  "🧠 LeetCode milestones",
+                ].map((pill) => (
+                  <button
+                    key={pill}
+                    type="button"
+                    onClick={() => handleSend(pill)}
+                    disabled={isLoading}
+                    className="whitespace-nowrap px-2.5 py-1 rounded-full bg-background/80 hover:bg-background border border-ink/15 text-pencil hover:text-foreground font-sketch text-[11px] transition-colors disabled:opacity-50"
+                  >
+                    {pill}
+                  </button>
+                ))}
+              </div>
+
               {/* Input */}
-              <div className="flex gap-2 mt-3 pt-3 border-t border-ink/10">
+              <div className="flex gap-2 mt-2 pt-2 border-t border-ink/10">
                 <input
                   type="text"
                   value={input}
